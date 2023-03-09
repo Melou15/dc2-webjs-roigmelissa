@@ -33,3 +33,27 @@ localStorage.setItem("serpiere",objLinea);
 
 
 let serpi = localStorage.getItem("serpiere");
+let pli = JSON.parse(serpi);
+elt.innerHTML += pli.nom;
+
+
+const nameInput = document.getElementById('input');
+const registrer = document.getElementById('display');
+
+registrer.addEventListener('click', function(){
+	const name = nameInput.value;
+	localStorage.setItem("nom", name);
+});
+
+
+const ret = document.getElementById('retour');
+
+
+
+
+
+
+
+
+
+
