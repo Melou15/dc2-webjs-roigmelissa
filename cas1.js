@@ -25,6 +25,8 @@ let objSon = {
 	poids : 500,
 	fonction : "lave le sol",
 	classe : "A",
+	prix : 8.99,
+	absorption : 98.5
 }
 let objLinea = JSON.stringify(objSon);
 localStorage.setItem("serpiere",objLinea);
