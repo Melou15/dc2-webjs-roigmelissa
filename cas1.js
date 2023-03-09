@@ -16,3 +16,15 @@ mel.addEventListener('click', function(){
 	mel.innerHTML = "ET C'EST RÉUSSI !";
 	elt.style = "color:blue";
 });
+
+
+let objSon = {
+	nom : "serpiclean",
+	longueur : 20,
+	largeur : 30,
+	poids : 500,
+	fonction : "lave le sol",
+	classe : "A",
+}
+let objLinea = JSON.stringify(objSon);
+localStorage.setItem("serpiere",objLinea);
