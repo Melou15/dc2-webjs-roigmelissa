@@ -31,4 +31,3 @@ localStorage.setItem("serpiere",objLinea);
 
 
 let serpi = localStorage.getItem("serpiere");
-alert(objSon.nom);
