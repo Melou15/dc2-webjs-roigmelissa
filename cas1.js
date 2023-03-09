@@ -39,6 +39,7 @@ elt.innerHTML += pli.nom;
 
 const nameInput = document.getElementById('input');
 const registrer = document.getElementById('display');
+const displayArea = document.getElementById('displayArea');
 
 registrer.addEventListener('click', function(){
 	const name = nameInput.value;
@@ -47,8 +48,14 @@ registrer.addEventListener('click', function(){
 
 
 const ret = document.getElementById('retour');
-
-
+ret.addEventListener('click',function(){
+	var text = localStorage.getItem("text");
+	if (text) {
+		displayArea.textContent = "Texte enregistré : " + text;
+		localStorage.removeItem("text");
+	}
+	});
+	
 
 
 
