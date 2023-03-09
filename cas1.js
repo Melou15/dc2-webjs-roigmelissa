@@ -10,3 +10,9 @@ elt.appendChild(newElm);
 elt.replaceChild(document.createElement("section"), newElm);
 newElm.innerHTML = "<section><p><span>coucou je test quelque chose</span></p><p><span>coucou je test autre chose </span></p></section>";
 elt.appendChild(newElm);
+
+const mel = document.getElementById('bouton');
+mel.addEventListener('click', function(){
+	mel.innerHTML = "ET C'EST RÉUSSI !";
+	elt.style = "color:blue";
+});
