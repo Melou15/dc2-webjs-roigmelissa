@@ -65,11 +65,36 @@ var search_params = new URLSearchParams(url.search);
 if (search_params.has('name')){
 	var name = search_params.get('name');
 	console.log(name);
+}
+if (search_params.has('id')){	
 	var id = search_params.get('id');
 	console.log(id);
+}	
+if (search_params.has('lastname')){	
 	var lastname = search_params.get('lastname');
 	console.log(lastname);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
